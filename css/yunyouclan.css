@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+    font-family:'Supercell-Magic_5';
+    src:url('../fonts/Supercell-Magic_5.ttf') format('truetype');  
+}
+
+.hide
+{
+	display:none;
+	}
+	
+.yunyouback{
+	background-color:rgba(0,0,0,0.5);
+  padding: 5px;
+	border: 1px solid rgba(0,0,0,.2);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+	box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+	color:rgba(255,255,255,1.00);
+}
+A:link {
+	COLOR: #EFF8FF; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #B7DDFB; font-weight:bold;
+}
+A:active {
+	COLOR: #A8E1FF; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #FFF4E1;}
+	
+table{
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+
+body {
+
+  padding-top: 60px;
+  font-family:"微软雅黑","幼圆", "楷体", "隶书", "华文隶书", "黑体",  "华文行楷";   
+  	background-image: url(../images/loginback.jpg);
+  background-attachment:fixed;
+  background-size:cover;
+  position: relative;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+button {
+  background: linear-gradient(-45deg, #ffffff, #000000);
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+
+}
+button:hover:before {
+  left: 130%;
+  transition: .4s;
+}
+button:before {
+  content: '';
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 65px;
+  position: absolute;
+  top: 0;
+  left: -180%;
+  transform: skew(-45deg);
+  transition: 0s;
+}
+
+.btn-inverse {
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  padding: 7px 14px;
+  border-radius: 10px;
+
+
+}
+.btn-inverse:hover:before {
+  left: 130%;
+  transition: .4s;
+}
+.btn-inverse:before {
+  content: '';
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 65px;
+  position: absolute;
+  top: 0;
+  left: -180%;
+  transform: skew(-45deg);
+  transition: 0s;
+
+
+}
+
+hr{
+	opacity:0.15;
+}
+
+.navbar-inverse {
+  background-color:rgba(0,0,0,0.50);
+  border:none;
+}
+/*按钮重载*/
+.btn-inverse {
+  color:#fff;
+  background-color:rgba(0,0,0,0.6);
+  border:none;
+  box-shadow: 0px 0px 3px rgba(255,255,255,0.3);
+}
+.btn-inverse:focus,
+.btn-inverse.focus {
+  color:#fff;
+  background-color:rgba(0,0,0,0.5);
+  border:none;
+}
+.btn-inverse:hover,.btn-inverse-hover,.btn-inverse-hover:hover{
+  color:#fff;
+  background-color:rgba(200,200,200,0.1);
+  border:none;
+}
+.btn-inverse:active,
+.btn-inverse.active,
+.open > .dropdown-toggle.btn-inverse {
+  color:#fff;
+  background-color:rgba(0,0,0,0.7);
+  border:none;
+}
+.btn-inverse:active:hover,
+.btn-inverse.active:hover,
+.open > .dropdown-toggle.btn-inverse:hover,
+.btn-inverse:active:focus,
+.btn-inverse.active:focus,
+.open > .dropdown-toggle.btn-inverse:focus,
+.btn-inverse:active.focus,
+.btn-inverse.active.focus,
+.open > .dropdown-toggle.btn-inverse.focus {
+  color:#fff;
+  background-color:rgba(0,0,0,0.7);
+  border:none;
+}
+/*---*/
+.modal-content{
+	background:rgba(255,255,255,0.9);
+	background-image:url(../img/background.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:120px;
+
+}
+.yunyou-bgblur{
+    box-shadow:0px 0px 15px #000;
+    -moz-box-shadow:0px 0px 15px #000;
+    -webkit-box-shadow:0px 0px 15px #000;
+    border-radius: 5px;
+ /*    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+  box-shadow: 0 0 13px 3px rgba(0,0,0,.5);*/
+}
+.yunyou-input{
+	background-color:rgba(0,0,0,0.5);
+	border:rgba(0,0,0,0.6);
+	color:rgba(255,255,255,1.00);
+	font-size:large;
+}
+
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  background-color:rgba(0,0,0,0.5);;
+  border: 0px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > a:active,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #000000;
+  background-color: rgba(255,255,255,0.3);
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #000;
+  cursor: default;
+  background-color: #(255,255,255,0.5);
+  border-color: #337ab7;
+}
+
+.yunyou-background{
+  background-color: rgba(0,0,0,0.5);
+}
+.yunyou-panel{
+   padding:10px 10px 10px 10px;
+   color:#fff;
+   margin-bottom: 20px;
+}
+
+.nav > li > a {
+      color: #AAA;
+}
+.nav > li > a:hover,
+.nav > li > a:focus{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  -webkit-transition: all 1s;-moz-transition: all 1s;-o-transition: all 1s;
+}
+
+.yunyou-fixed{
+  position: fixed;
+}
+
+.btn-primary{
+  background-color: rgba(57,137,255,0.5);
+  border:rgba(57,137,255,0.5);
+}
+.btn-primary:active{
+  background-color: rgba(57,137,255,0.9);
+  border:none;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border:none;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgba(57,137,255,0.9);
+  border:none;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: rgba(57,137,255,0.9);
+  border:none;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: rgba(57,137,255,0.9);
+  border:none;
+}
